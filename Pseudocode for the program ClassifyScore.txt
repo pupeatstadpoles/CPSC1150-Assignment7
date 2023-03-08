@@ -1,0 +1,43 @@
+Pseudocode for the program ClassifyScores
+
+Filename: ClassifyScores.java
+Purpose: Given user-inputted test scores with values from 0-100, program will sort each score into appropriate grade ranges eg. 0-9, 10-19 etc.
+Input: Test scores as integers
+Output: Array of score ranges displayed
+
+0. Declare variables:
+0.1 Let score be an integer test score
+0.2 Let ranges be an array of integers with 10 elements
+0.3 Let running be a boolean value
+
+ Algorithm for a program to categorize scores into their ranges
+ 1. START
+ 2. Initialize ranges with 0 as every elements
+ 3. running <-- true;
+ 4. Print statements:
+    4.1 "This program displays the number of scores for each range. "
+    4.2 "The ranges are as follows: "
+    4.3 Print ranges 0-9, 10-19 etc. until 90-100
+    4.4 "Enter in you scores. Enter a negative number to end program."
+5. Repeat while running = true:
+    5.1 score <-- input
+    5.2 if score < 0, set running <--- false
+    5.3 if score > 100, print an error
+    5.4 OTHERWISE score <-- score/10
+    5.5 For each case, do as follows:
+        5.5.1 if score = 0: increment range[0]
+        5.5.2 if score = 1: increment range[1]
+        5.5.3 if score = 2: increment range[2]
+        5.5.4 if score = 3: increment range[3]
+        5.5.5 if score = 4: increment range[4]
+        5.5.6 if score = 5: increment range[5]
+        5.5.7 if score = 6: increment range[6]
+        5.5.8 if score = 7: increment range[7]
+        5.5.9 if score = 8: increment range[8]
+        5.5.10 if score = 9 or 10: increment range[9]
+6. Output ranges:
+    6.1 Print "Range       Number of scores"
+    6.2 Print "0-9" + Print range[0]
+    6.3 Print "10-19" + Print range [1]
+    6.4 Print "20-29" + Print range [2]
+7. STOP
